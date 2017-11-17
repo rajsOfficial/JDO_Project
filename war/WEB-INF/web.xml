@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>JDO_Project</servlet-name>
+		<servlet-class>com.contact.JDO_ProjectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JDO_Project</servlet-name>
+		<url-pattern>controller</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editing</servlet-name>
+		<servlet-class>com.contact.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editing</servlet-name>
+		<url-pattern>update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>showing</servlet-name>
+		<servlet-class>com.contact.Show</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>showing</servlet-name>
+		<url-pattern>Show</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updating</servlet-name>
+		<servlet-class>com.contact.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updating</servlet-name>
+		<url-pattern>updater</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
